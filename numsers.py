@@ -1,0 +1,15 @@
+a=122
+b=12
+l1=len(str(a))
+l2=len(str(b))
+p=[]
+while(a!=0):
+    d=int(a%10)
+    s=int(b%10)
+    if(d!=s):
+        s=d
+    p.append(s)    
+    b=int(b/10)
+    a=int(a/10)
+p.reverse()
+print(p)
